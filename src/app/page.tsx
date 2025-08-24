@@ -44,7 +44,7 @@ export default function Home() {
     name: "Jinjja: Your Korean Booster",
     description:
       "Hangul is easy, but Korean is hard, right? Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
-    url: "https://jinjja-landing.vercel.app",
+    url: "https://jinjja.app",
     applicationCategory: "EducationalApplication",
     operatingSystem: ["iOS", "Android"],
     inLanguage: ["en"],
