@@ -58,14 +58,6 @@ body {
   padding: 4rem 0; /* 상하 여백 추가 */
 }
 
-/* 콘텐츠가 화면을 넘을 때 처리 */
-@media (max-height: 800px) {
-  .section-container {
-    align-items: flex-start;
-    padding: 2rem 0;
-  }
-}
-
 /* 스크롤 컨테이너 - 스냅 제거 */
 .scroll-container {
   overflow-y: auto;

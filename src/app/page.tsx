@@ -313,9 +313,9 @@ export default function Home() {
             </div>
           </div>
           <footer className="absolute bottom-4 left-0 right-0 ">
-            <div className="text-center text-gray-400 text-s">
+            <div className="text-center text-gray-400 sm:text-s text-xs">
               <p className="mb-4">© 2024 OrganCow. All rights reserved.</p>
-              <div className="flex justify-center gap-8">
+              <div className="flex justify-center  gap-4">
                 <a
                   href="https://0hhanum.github.io/jinjja-policy/"
                   className="hover:text-jinjja-primary transition-colors"
