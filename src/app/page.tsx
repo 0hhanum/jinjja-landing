@@ -276,7 +276,7 @@ export default function Home() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-[#1b1b1b] p-8 rounded-2xl border border-gray-700 hover:border-jinjja-primary/50 transition-colors flex flex-col justify-center gap-4"
+                  className="bg-black p-8 rounded-2xl border border-gray-600 hover:border-jinjja-primary/50 transition-colors flex flex-col justify-center gap-4"
                   style={{
                     padding: "16px",
                   }}
