@@ -115,6 +115,21 @@ export default function Home() {
               <div className="flex flex-row gap-4 justify-center items-center h-24">
                 <AppStoreButton platform="ios" />
                 <AppStoreButton platform="android" />
+                <a
+                  href="https://www.instagram.com/korean_jinjja/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center"
+                  aria-label="Follow us on Instagram"
+                >
+                  <Image
+                    src="/images/instagram.svg"
+                    alt="Instagram"
+                    width={48}
+                    height={48}
+                    className="h-10 w-auto"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -325,13 +340,28 @@ export default function Home() {
           <div className="gradient-bg-circle gradient-bg-circle-large md:-top-64 md:-right-40 sm:-top-24 sm:-right-24 -top-24 -right-24"></div>
           <div className="gradient-bg-circle gradient-bg-circle-medium  md:-bottom-48 md:-left-24 sm:-bottom-20 sm:-left-5 -bottom-20 -left-5"></div>
 
-          <div className="relative z-10 max-w-4xl mx-auto px-6 w-full text-center gap-4 flex flex-col items-center">
+          <div className="relative z-10 max-w-4xl mx-auto px-6 w-full text-center gap-2 flex flex-col items-center">
             <h2 className="text-4xl md:text-6xl font-bold text-jinjja-primary mb-8">
               Start with Jinjja.
             </h2>
-            <div className="flex flex-row gap-6 justify-center items-center mb-12 h-24">
+            <div className="flex flex-row gap-4 justify-center items-center mb-12 h-24">
               <AppStoreButton platform="ios" />
               <AppStoreButton platform="android" />
+              <a
+                href="https://www.instagram.com/korean_jinjja/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center"
+                aria-label="Follow us on Instagram"
+              >
+                <Image
+                  src="/images/instagram.svg"
+                  alt="Instagram"
+                  width={48}
+                  height={48}
+                  className="h-10 w-auto"
+                />
+              </a>
             </div>
           </div>
           <footer className="absolute bottom-4 left-0 right-0 ">
