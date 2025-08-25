@@ -98,8 +98,7 @@ export default function Home() {
             <div className="gap-2 flex flex-col items-center">
               <h1 className="text-4xl md:text-7xl font-bold mb-4 text-jinjja-primary">
                 Jinjja,
-              </h1>
-              <h1 className="text-4xl md:text-7xl font-bold mb-4 text-jinjja-primary">
+                <br />
                 your Korean Booster
               </h1>
               <p className="text-lg md:text-2xl text-gray-300 mb-4">
