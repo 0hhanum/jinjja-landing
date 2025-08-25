@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -213,6 +214,20 @@ export default function RootLayout({
           rel="apple-touch-icon-precomposed"
           href="/apple-icon-precomposed.png"
         />
+        {/* Google Ads 외부 스크립트 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17424665166"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = window.gtag || gtag;
+            gtag('js', new Date());
+            gtag('config', 'AW-17424665166');
+          `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
