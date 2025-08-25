@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jinjja, Your Korean Booster | Looking for advanced Korean?",
+  title: "Jinjja, Your Korean Booster | Master Korean in 15 Minutes Daily",
   description:
-    "Learn 2,000+ authentic Korean phrases through interactive speaking exercises. Perfect for K-drama fans, professionals, and travelers. Context-based learning with gamified lessons and smart review system.",
+    "Hangul is easy, but Korean is hard, right? Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
   keywords: [
     "Korean learning app",
     "Learn Korean 15 minutes",
@@ -37,6 +37,10 @@ export const metadata: Metadata = {
     "Korean forgetting curve",
     "Speak play learn Korean",
     "Korean booster app",
+    "Advanced Korean",
+    "Real Korean",
+    "Free Korean app",
+    "Free Korean",
   ],
   authors: [{ name: "OrganCow" }],
   creator: "OrganCow",
@@ -50,13 +54,13 @@ export const metadata: Metadata = {
       "https://apps.apple.com/us/app/jinjja-your-korean-booster/id6746579913",
   },
   openGraph: {
-    title: "Jinjja - Your Korean Booster | Master Korean in 15 Minutes Daily",
+    title: "Jinjja: Your Korean Booster | Master Korean in 15 Minutes Daily",
     description:
-      "Learn 2,000+ authentic Korean phrases through interactive speaking exercises. Perfect for K-drama fans, professionals, and travelers. Available on iOS & Android.",
+      "Hangul is easy, but Korean is hard, right? Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
     type: "website",
     locale: "en_US",
     siteName: "Jinjja Korean",
-    url: "https://jinjja-landing.vercel.app",
+    url: "https://jinjja.app",
     images: [
       {
         url: "/images/app-icon.png",
@@ -72,9 +76,6 @@ export const metadata: Metadata = {
     description:
       "Learn 2,000+ authentic Korean phrases in just 15 minutes daily. Interactive speaking exercises for K-drama fans & professionals.",
     images: ["/images/app-icon.png"],
-  },
-  alternates: {
-    canonical: "https://jinjja-landing.vercel.app",
   },
   robots: {
     index: true,
@@ -145,19 +146,73 @@ export default function RootLayout({
         />
         {/* Safari favicon 지원 */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
-        <link rel="apple-touch-icon-precomposed" href="/apple-icon-precomposed.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/favicon-96x96.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="/apple-icon-57x57.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="/apple-icon-60x60.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="72x72"
+          href="/apple-icon-72x72.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/apple-icon-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="/apple-icon-114x114.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href="/apple-icon-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/apple-icon-144x144.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/apple-icon-152x152.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-icon-180x180.png"
+        />
+        <link
+          rel="apple-touch-icon-precomposed"
+          href="/apple-icon-precomposed.png"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
