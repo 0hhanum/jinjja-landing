@@ -1,5 +1,6 @@
 // SEO 최적화를 위해 서버 사이드 렌더링 사용
 import Script from "next/script";
+import Image from "next/image";
 
 // 앱스토어/플레이스토어 버튼 컴포넌트
 const AppStoreButton = ({ platform }: { platform: "ios" | "android" }) => {
@@ -20,16 +21,22 @@ const AppStoreButton = ({ platform }: { platform: "ios" | "android" }) => {
       }`}
     >
       {isIOS ? (
-        <img
+        <Image
           src="/images/appstore-badge.svg"
           alt="Download on the App Store"
+          width={120}
+          height={48}
           className="h-12 w-auto"
+          priority
         />
       ) : (
-        <img
+        <Image
           src="/images/google-play-badge.png"
           alt="Get it on Google Play"
+          width={135}
+          height={48}
           className="h-12 w-auto"
+          priority
         />
       )}
     </a>
@@ -96,7 +103,7 @@ export default function Home() {
 
           <div className="relative z-10 text-center max-w-4xl mx-auto px-6 w-full">
             <div className="gap-2 flex flex-col items-center">
-              <h1 className="text-4xl md:text-7xl font-bold mb-4 text-jinjja-primary">
+              <h1 className="text-4xl md:text-7xl font-bold mb-4 text-jinjja-primary md:leading-20 leading-12">
                 Jinjja,
                 <br />
                 your Korean Booster
@@ -122,10 +129,14 @@ export default function Home() {
           <div className="relative z-10 max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center justify-items-center">
             <div className="relative order-2 md:order-1">
               <div className="w-64 md:w-80 h-auto bg-transparent rounded-3xl mx-auto relative overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/screenshots/speak-play-learn.png"
                   alt="Speak Play Learn feature"
+                  width={320}
+                  height={640}
                   className="w-full h-auto object-contain rounded-3xl"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 />
               </div>
             </div>
@@ -172,10 +183,14 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="w-64 md:w-80 h-auto bg-transparent rounded-3xl mx-auto relative overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/screenshots/learn-in-context.png"
                   alt="Learn in Context feature"
+                  width={320}
+                  height={640}
                   className="w-full h-auto object-contain rounded-3xl"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 />
               </div>
             </div>
@@ -190,10 +205,14 @@ export default function Home() {
           <div className="relative z-10 max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center justify-items-center">
             <div className="relative order-2 md:order-1">
               <div className="w-64 md:w-80 h-auto bg-transparent rounded-3xl mx-auto relative overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/screenshots/2000authentic-korean-phrase.png"
                   alt="2000 Authentic Korean Phrases feature"
+                  width={320}
+                  height={640}
                   className="w-full h-auto object-contain rounded-3xl"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 />
               </div>
             </div>
@@ -236,10 +255,14 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="w-64 md:w-80 h-auto bg-transparent rounded-3xl mx-auto relative overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/screenshots/just-start.png"
                   alt="Just Start feature"
+                  width={320}
+                  height={640}
                   className="w-full h-auto object-contain rounded-3xl"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 />
               </div>
             </div>
