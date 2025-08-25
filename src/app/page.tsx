@@ -119,7 +119,7 @@ export default function Home() {
                   href="https://www.instagram.com/korean_jinjja/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center"
+                  className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center fixed md:bottom-8 md:right-8 bottom-4 right-4 z-20"
                   aria-label="Follow us on Instagram"
                 >
                   <Image
@@ -127,7 +127,7 @@ export default function Home() {
                     alt="Instagram"
                     width={48}
                     height={48}
-                    className="h-10 w-auto"
+                    className="md:h-12 h-10 w-auto"
                   />
                 </a>
               </div>
@@ -347,21 +347,6 @@ export default function Home() {
             <div className="flex flex-row gap-4 justify-center items-center mb-12 h-24">
               <AppStoreButton platform="ios" />
               <AppStoreButton platform="android" />
-              <a
-                href="https://www.instagram.com/korean_jinjja/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center"
-                aria-label="Follow us on Instagram"
-              >
-                <Image
-                  src="/images/instagram.svg"
-                  alt="Instagram"
-                  width={48}
-                  height={48}
-                  className="h-10 w-auto"
-                />
-              </a>
             </div>
           </div>
           <footer className="absolute bottom-4 left-0 right-0 ">
