@@ -93,7 +93,21 @@ export default function Home() {
       <Script id="structured-data" type="application/ld+json">
         {JSON.stringify(structuredData)}
       </Script>
-
+      <a
+        href="https://www.instagram.com/korean_jinjja/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center fixed md:bottom-8 md:right-8 bottom-4 right-4 z-20"
+        aria-label="Follow us on Instagram"
+      >
+        <Image
+          src="/images/instagram.svg"
+          alt="Instagram"
+          width={48}
+          height={48}
+          className="md:h-12 h-10 w-auto"
+        />
+      </a>
       <div className="scroll-container">
         {/* 섹션 1: 메인 히어로 */}
         <section className="section-container bg-black relative overflow-hidden">
@@ -115,21 +129,6 @@ export default function Home() {
               <div className="flex flex-row gap-4 justify-center items-center h-24">
                 <AppStoreButton platform="ios" />
                 <AppStoreButton platform="android" />
-                <a
-                  href="https://www.instagram.com/korean_jinjja/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center fixed md:bottom-8 md:right-8 bottom-4 right-4 z-20"
-                  aria-label="Follow us on Instagram"
-                >
-                  <Image
-                    src="/images/instagram.svg"
-                    alt="Instagram"
-                    width={48}
-                    height={48}
-                    className="md:h-12 h-10 w-auto"
-                  />
-                </a>
               </div>
             </div>
           </div>
