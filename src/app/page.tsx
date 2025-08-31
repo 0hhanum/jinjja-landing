@@ -353,7 +353,7 @@ export default function Home() {
               <p className="mb-4">© 2024 OrganCow. All rights reserved.</p>
               <div className="flex justify-center  gap-4">
                 <a
-                  href="https://0hhanum.github.io/jinjja-policy/"
+                  href="/privacy-policy.html"
                   className="hover:text-jinjja-primary transition-colors"
                 >
                   Privacy Policy
