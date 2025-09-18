@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import Image from "next/image";
+import Navigation from "@/components/Navigation";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -229,9 +231,34 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden bg-black`}
       >
-        {children}
+        {/* 고정된 네비게이션 */}
+        <Navigation />
+
+        {/* 고정된 Instagram 링크 */}
+        <a
+          href="https://www.instagram.com/korean_jinjja/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-all duration-300 hover:scale-105 hover:opacity-80 flex items-center justify-center fixed md:bottom-8 md:right-8 bottom-4 right-4 z-20"
+          aria-label="Follow us on Instagram"
+        >
+          <Image
+            src="/images/instagram.svg"
+            alt="Instagram"
+            width={48}
+            height={48}
+            className="md:h-12 h-10 w-auto"
+          />
+        </a>
+
+        {/* 스크롤 가능한 컨텐츠 영역 */}
+        <div className="fixed inset-0 overflow-y-auto z-10">
+          <div className="min-h-screen bg-transparent relative z-20">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

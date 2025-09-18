@@ -9,7 +9,7 @@
   --gray-light: #f5f5f5;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-primary: var(--brand-primary);
@@ -26,8 +26,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -102,17 +100,15 @@ body {
 
 /* 배경 그라디언트 원 스타일 */
 .gradient-bg-circle {
-  position: absolute;
   border-radius: 50%;
   background: radial-gradient(
     circle at 30% 40%,
-    rgba(210, 247, 30, 0.4) 0%,
-    rgba(210, 247, 30, 0.2) 30%,
-    rgba(210, 247, 30, 0.1) 60%,
+    rgba(210, 247, 30, 0.6) 0%,
+    rgba(210, 247, 30, 0.4) 30%,
+    rgba(210, 247, 30, 0.2) 60%,
     transparent 100%
   );
   filter: blur(1px);
-  z-index: 1;
   pointer-events: none;
 }
 
@@ -139,10 +135,74 @@ body {
 .screenshot-info-text-right {
   padding-right: 24px;
 }
+/* 커스텀 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(210, 247, 30, 0.8) 0%,
+    rgba(210, 247, 30, 0.6) 50%,
+    rgba(210, 247, 30, 0.4) 100%
+  );
+  border-radius: 4px;
+  border: 1px solid rgba(210, 247, 30, 0.2);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(210, 247, 30, 1) 0%,
+    rgba(210, 247, 30, 0.8) 50%,
+    rgba(210, 247, 30, 0.6) 100%
+  );
+  border-color: rgba(210, 247, 30, 0.4);
+  transform: scaleX(1.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(
+    180deg,
+    rgba(210, 247, 30, 1) 0%,
+    rgba(210, 247, 30, 0.9) 100%
+  );
+}
+
+/* Firefox 스크롤바 스타일 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(210, 247, 30, 0.6) rgba(0, 0, 0, 0.1);
+}
+
+/* 스크롤바 호버 애니메이션 효과 */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 /* 모바일 최적화 */
 @media (max-width: 768px) {
   body {
     font-size: 16px; /* iOS 확대 방지 */
+  }
+
+  /* 모바일에서 스크롤바 더 얇게 */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    border: none;
   }
 
   .section-container {
