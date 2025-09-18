@@ -48,9 +48,9 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Jinjja: Your Korean Booster",
+    name: "Jinjja, Your Korean Booster | The best way to learn real Korean",
     description:
-      "Hangul is easy, but Korean is hard, right? Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
+      "Hangul is easy, but Korean is hard. Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life."
     url: "https://jinjja.app",
     applicationCategory: "EducationalApplication",
     operatingSystem: ["iOS", "Android"],

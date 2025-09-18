@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jinjja, Your Korean Booster | Master Korean in 15 Minutes Daily",
+  title: "Jinjja, Your Korean Booster | The best way to learn real Korean",
   description:
-    "Hangul is easy, but Korean is hard, right? Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
+    "Hangul is easy, but Korean is hard. Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
   keywords: [
     "Korean learning app",
     "Learn Korean 15 minutes",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
       "https://apps.apple.com/us/app/jinjja-your-korean-booster/id6746579913",
   },
   openGraph: {
-    title: "Jinjja: Your Korean Booster | Master Korean in 15 Minutes Daily",
+    title: "Jinjja, Your Korean Booster | The best way to learn real Korean",
     description:
-      "Hangul is easy, but Korean is hard, right? Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
+      "Hangul is easy, but Korean is hard. Master Korean in just 15 minutes a day. Learn over 2,000 authentic Korean expressions used in daily life.",
     type: "website",
     locale: "en_US",
     siteName: "Jinjja Korean",
@@ -74,8 +74,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Jinjja - Your Korean Booster",
-    description:
-      "Learn 2,000+ authentic Korean phrases in just 15 minutes daily. Interactive speaking exercises for K-drama fans & professionals.",
+    description: "The best way to learn real Korean",
     images: ["/images/app-icon.png"],
   },
   robots: {
