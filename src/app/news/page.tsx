@@ -7,6 +7,17 @@ export default function NewsPage() {
 
   const newsData = [
     {
+      title: "Jinjja News #4",
+      date: "2025.10.31",
+      images: [
+        {
+          src: "news_1028.png",
+          alt: "A word learning feature has been added.",
+        },
+      ],
+      content: ["A word learning feature has been added.", "It's free!"],
+    },
+    {
       title: "Jinjja News #3",
       date: "2025.09.01",
       images: [
