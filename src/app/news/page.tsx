@@ -7,6 +7,21 @@ export default function NewsPage() {
 
   const newsData = [
     {
+      title: "Jinjja News #8",
+      date: "2025.12.18",
+      images: [
+        {
+          src: "news_1218_1.png",
+          alt: "Now you can peek words.",
+        },
+        {
+          src: "news_1218_2.png",
+          alt: "Now you can peek words.",
+        },
+      ],
+      content: ["Now you can peek words 👀"],
+    },
+    {
       title: "Jinjja News #7",
       date: "2025.12.16",
       images: [
