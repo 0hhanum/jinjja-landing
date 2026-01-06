@@ -7,6 +7,32 @@ export default function NewsPage() {
 
   const newsData = [
     {
+      title: "Jinjja News #10",
+      date: "2026.01.07",
+      images: [
+        {
+          src: "news_260107_1.png",
+          alt: "You can now hide streaks.",
+        },
+        {
+          src: "news_260107_2.png",
+          alt: "You can now hide streaks.",
+        },
+      ],
+      content: ["You can now hide streaks."],
+    },
+    {
+      title: "Jinjja News #9",
+      date: "2026.01.05",
+      images: [
+        {
+          src: "news_260105.png",
+          alt: "Just listen, it'll click.",
+        },
+      ],
+      content: ["Finally! You can now use the listening feature."],
+    },
+    {
       title: "Jinjja News #8",
       date: "2025.12.18",
       images: [
