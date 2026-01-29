@@ -7,6 +7,21 @@ export default function NewsPage() {
 
   const newsData = [
     {
+      title: "Jinjja News #11",
+      date: "2026.01.29",
+      images: [
+        {
+          src: "news_260129_1.png",
+          alt: "You can now choose review mode.",
+        },
+        {
+          src: "news_260107_2.png",
+          alt: "You can now choose review mode.",
+        },
+      ],
+      content: ["You can now choose review mode."],
+    },
+    {
       title: "Jinjja News #10",
       date: "2026.01.07",
       images: [
