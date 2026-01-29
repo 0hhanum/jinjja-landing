@@ -6,7 +6,6 @@ export default function NewsPage() {
     "https://iqlzqpydoramjwsmnhvl.supabase.co/storage/v1/object/public/jinjja-web-assets";
 
   const newsData = [
-   
     {
       title: "Jinjja News #11",
       date: "2026.01.29",
