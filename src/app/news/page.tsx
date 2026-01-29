@@ -6,6 +6,7 @@ export default function NewsPage() {
     "https://iqlzqpydoramjwsmnhvl.supabase.co/storage/v1/object/public/jinjja-web-assets";
 
   const newsData = [
+   
     {
       title: "Jinjja News #11",
       date: "2026.01.29",
@@ -15,7 +16,7 @@ export default function NewsPage() {
           alt: "You can now choose review mode.",
         },
         {
-          src: "news_260107_2.png",
+          src: "news_260129_2.png",
           alt: "You can now choose review mode.",
         },
       ],
