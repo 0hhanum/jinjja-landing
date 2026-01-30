@@ -7,6 +7,21 @@ export default function NewsPage() {
 
   const newsData = [
     {
+      title: "Jinjja News #12",
+      date: "2026.01.30",
+      images: [
+        {
+          src: "news_260130_1.png",
+          alt: "Eagerly waiting for your question!",
+        },
+        {
+          src: "news_260130_2.png",
+          alt: "Eagerly waiting for your question!",
+        },
+      ],
+      content: ["I've added question feature.", "If you have any questions while studying, spot a bug, or have app feedback, feel free to reach out! I’ll reply personally 😇"],
+    },
+    {
       title: "Jinjja News #11",
       date: "2026.01.29",
       images: [
