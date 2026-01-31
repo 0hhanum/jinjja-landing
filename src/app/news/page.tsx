@@ -8,6 +8,21 @@ export default function NewsPage() {
   const newsData = [
     {
       title: "Jinjja News #12",
+      date: "2026.02.01",
+      images: [
+        {
+          src: "news_260201_1.png",
+          alt: "NEW: Vocab Quiz!",
+        },
+        {
+          src: "news_260201_2.png",
+          alt: "You can now check your review schedule in Vocab.",
+        },
+      ],
+      content: ["NEW: Vocab Quiz!", "You can now check your review schedule in Vocab."],
+    },
+    {
+      title: "Jinjja News #12",
       date: "2026.01.30",
       images: [
         {
