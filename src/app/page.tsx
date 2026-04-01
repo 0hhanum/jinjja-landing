@@ -61,11 +61,11 @@ export default function Home() {
             </h1>
 
             <div className="text-lg md:text-xl leading-relaxed">
-              <p>I'm Hanum, a Korean software developer.</p>
+              <p>I'm Hanum, the founder of Jinjja.</p>
               <div>
                 <p>
                   <br />
-                  Jinjja is a Korean language learning service.
+                  Jinjja is a Korean language learning app.
                   <br />I made it with the belief that{" "}
                   <span className="text-jinjja-primary">
                     language has its own way of being learned.
